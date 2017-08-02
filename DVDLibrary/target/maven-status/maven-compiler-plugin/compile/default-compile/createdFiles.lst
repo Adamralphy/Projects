@@ -1,0 +1,8 @@
+adomo/DVDLibrary/data/DVDDao.class
+adomo/DVDLibrary/data/DVDDaoFileImpl.class
+adomo/DVDLibrary/ui/UserIO.class
+adomo/DVDLibrary/controller/Controller.class
+adomo/DVDLibrary/ui/View.class
+adomo/DVDLibrary/domain/DVD.class
+adomo/DVDLibrary/controller/App.class
+adomo/DVDLibrary/ui/UserIOFileImpl.class

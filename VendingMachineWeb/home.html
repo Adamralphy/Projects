@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vending Machine</title>
+        <!--BOOTstrap code CSS -->
+        <link href="css/bootstrap.css"
+              rel="stylesheet">
+        <style>
+            h4 {
+                text-align:center;
+                margin-top:-10px;
+                padding-top:0px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center" id="one">Vending Machine</h1>
+
+            <hr/>
+
+            <div class="row">
+                <div class="col-lg-3" style="height:270px;" id="div1">
+                    <div style="border:1px solid black;height:260px;width:282px;">
+                        <p id="item1" class="text-left"></p>
+                        <h4 id="candy-name1"></h4>
+                        <h4 id = "candy-price1"></h4>
+                        <h4 id="candy-q1"></h4>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="height:270px;" id="div2">
+                    <div style="border:1px solid black;height:260px;width:282px;">
+                        <p id="item2"class="text-left"></p>
+                        <h4 id="candy-name2"></h4>
+                        <h4 id = "candy-price2"></h4>
+                        <h4 id="candy-q2"></h4>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="height:270px;" id="div3">
+                    <div style="border:1px solid black;height:260px;width:282px;">
+                        <p id="item3" class="text-left"></p>
+                        <h4 id="candy-name3"></h4>
+                        <h4 id = "candy-price3"></h4>
+                        <h4 id="candy-q3"></h4>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h2 class="text-center" style="margin-top:0px;">Total $ In</h2>
+                    <div class="text-center" id="">
+                        <form>
+                            <input  type="text"
+                                    class="form-control"
+                                    id="total-in"
+                                    style="width:150px;margin: 10px auto;border:1px solid black"
+                                    placeholder="0.00" readonly/>
+                            <button type="button"
+                                    class="btn btn-default"
+                                    id="add-dollar" style="margin:5px auto;">Add Dollar</button>
+                            <button type="button"
+                                    class="btn btn-default"
+                                    id="add-quarter" style="margin:5px auto;">Add Quarter</button>
+                            <button type="button"
+                                    class="btn btn-default"
+                                    id="add-dime" style="margin:5px auto;">Add Dime</button>
+                            <button type="button"
+                                    class="btn btn-default"
+                                    id="add-nickel" style="margin:5px auto;">Add Nickel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3" style="height:270px;" id="div4">
+                    <div style="border:1px solid black;height:260px;width:282px;">
+                        <p id="item4" class="text-left"></p>
+                        <h4 id="candy-name4"></h4>
+                        <h4 id = "candy-price4"></h4>
+                        <h4 id="candy-q4"></h4>
+                    </div>
+                </div>
+                <div class="col-md-3" style="height:270px;" id="div5">
+                    <div style="border:1px solid black;height:260px;width:282px;">
+                        <p id="item5" class="text-left"></p>
+                        <h4 id="candy-name5"></h4>
+                        <h4 id = "candy-price5"></h4>
+                        <h4 id="candy-q5"></h4>
+                    </div>
+                </div>
+                <div class="col-md-3" style="height:270px;" id="div6">
+                    <div style="border:1px solid black;height:260px;width:282px;">
+                        <p id="item6" class="text-left"></p>
+                        <h4 id="candy-name6"></h4>
+                        <h4 id = "candy-price6"></h4>
+                        <h4 id="candy-q6"></h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <hr style="height:1px;background-color:black;margin-top:0px;margin-bottom:5px;"/>
+                    <form>
+                        <h2 class="text-center" style="margin-top:0px;">Messages</h2>
+                        <input  type="text"
+                                class="form-control"
+                                id="message"
+                                style="width:200px;height:40px;margin: 10px auto;border:1px solid black" readonly/>
+                        <h3 style="display:inline;margin-left:20px;">Item: </h3>
+                        <input  type="text"
+                                class="form-control"
+                                id="item-box"
+                                style="width:150px;margin: 10px auto;border:1px solid black;display:inline;"
+                                placeholder="" readonly/>
+                        <button type="button"
+                                class="btn btn-default"
+                                style="width:200px;margin:20px auto 0px;display:block;"
+                                id="make-purchase">Make Purchase</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-3" style="height:270px;" id="div7">
+                    <div style="border:1px solid black;height:260px;width:282px;">
+                        <p id="item7"class="text-left"></p>
+                        <h4 id="candy-name7"></h4>
+                        <h4 id = "candy-price7"></h4>
+                        <h4 id="candy-q7"></h4>
+                    </div>
+                </div>
+                <div class="col-md-3" style="height:270px;" id="div8">
+                    <div style="border:1px solid black;height:260px;width:282px;">
+                        <p id="item8"class="text-left"></p>
+                        <h4 id="candy-name8"></h4>
+                        <h4 id = "candy-price8"></h4>
+                        <h4 id="candy-q8"></h4>
+                    </div>
+                </div>
+                <div class="col-md-3" style="height:270px;" id="div9">
+                    <div style="border:1px solid black;height:260px;width:282px;">
+                        <p id="item9" class="text-left"></p>
+                        <h4 id="candy-name9"></h4>
+                        <h4 id = "candy-price9"></h4>
+                        <h4 id="candy-q9"></h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <hr style="height:1px;background-color:black;margin-top:0px;margin-bottom:5px;"/>
+                    <form>
+                    <h2 class="text-center" style="margin-top:0px;">Change</h2>
+                    <input  type="text"
+                            class="form-control"
+                            id="change"
+                            style="height:50px;width:260px;margin: 10px auto;border:1px solid black;" readonly/>
+                    <button type="button"
+                            class="btn btn-default"
+                            style="width:175px;margin:20px auto 0px;display:block;"
+                            id="change-return">Change Return</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <script src="js/jquery-2.2.4.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="js/home.js"></script>
+    </body>
+</html>
